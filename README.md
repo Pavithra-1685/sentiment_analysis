@@ -1,38 +1,40 @@
+# 🌟 Sentiment Analysis Web App  
 
-
-#  Sentiment Analysis Web App  
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)  
+[![Streamlit](https://img.shields.io/badge/Framework-Streamlit-FF4B4B)](https://streamlit.io/)  
+[![Scikit-learn](https://img.shields.io/badge/ML-ScikitLearn-F7931E)](https://scikit-learn.org/)  
+[![NLTK](https://img.shields.io/badge/NLP-NLTK-00A86B)](https://www.nltk.org/)  
 
 A machine learning–based **Sentiment Analysis Web Application** built with **Python, Scikit-learn, NLTK, and Streamlit**.  
-The app allows users to input text, applies preprocessing (lemmatization), and predicts sentiment into one of four categories:  
-- Irrelevant  
-- Negative  
-- Neutral  
-- Positive  
+The app takes user text input, preprocesses it with lemmatization, and predicts sentiment into one of four categories:  
+
+✅ **Irrelevant**  
+😠 **Negative**  
+😐 **Neutral**  
+😊 **Positive**  
 
 ---
 
 ## 📊 Model Performance  
 
-Accuracy: 94.02%  
+**Overall Accuracy:** `94.02%`  
 
-Classification Report:
-```
+**Classification Report:**
+
+
 
 ```
-           precision    recall  f1-score   support
+          precision    recall  f1-score   support
 ```
 
 Irrelevant       0.95      0.92      0.94      2624
-Negative       0.96      0.94      0.95      4463
-Neutral       0.92      0.95      0.93      3589
-Positive       0.93      0.94      0.94      4123
+Negative         0.96      0.94      0.95      4463
+Neutral          0.92      0.95      0.93      3589
+Positive         0.93      0.94      0.94      4123
 
-```
-accuracy                           0.94     14799
-```
-
-macro avg       0.94      0.94      0.94     14799
-weighted avg       0.94      0.94      0.94     14799
+accuracy                             0.94     14799
+macro avg        0.94      0.94      0.94     14799
+weighted avg     0.94      0.94      0.94     14799
 
 ````
 
@@ -40,11 +42,11 @@ weighted avg       0.94      0.94      0.94     14799
 
 ## 🚀 Features  
 
-- Real-time sentiment prediction from user input.  
-- Multi-class classification with **four sentiment labels**.  
-- Interactive **Streamlit web interface**.  
-- Text preprocessing with **NLTK WordNet Lemmatizer**.  
-- Trained model stored with **Joblib** for fast loading.  
+- 🔮 **Real-time sentiment prediction** from user input  
+- 🎭 **Four-class classification** (Irrelevant, Negative, Neutral, Positive)  
+- 🖥️ **Streamlit-based web interface**  
+- 🧹 **Text preprocessing with NLTK WordNet Lemmatizer**  
+- ⚡ **Fast model loading** with Joblib  
 
 ---
 
@@ -52,41 +54,39 @@ weighted avg       0.94      0.94      0.94     14799
 
 - **Python 3**  
 - **Scikit-learn** → Model training & evaluation  
-- **NLTK** → Text preprocessing (lemmatization)  
-- **Streamlit** → Web app interface  
+- **NLTK** → NLP preprocessing (lemmatization)  
+- **Streamlit** → Interactive UI  
 - **Joblib** → Model persistence  
 
 ---
 
 ## ⚙️ Installation & Setup  
 
-1. **Clone the repository**  
-   ```bash
-   git clone <repo_link>
-   cd sentiment-analysis
+1️⃣ Clone the repository  
+```bash
+git clone <repo_link>
+cd sentiment-analysis
 ````
 
-2. **Install dependencies**
+2️⃣ Install dependencies
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-3. **Run the Streamlit app**
+3️⃣ Run the Streamlit app
 
-   ```bash
-   streamlit run sentiment_app_model.py
-   ```
+```bash
+streamlit run sentiment_app_model.py
+```
 
-4. **First-time NLTK setup**
-   The app will download required resources (`wordnet`, `omw-1.4`) automatically.
-   Alternatively, you can run this manually before starting the app:
+4️⃣ First-time NLTK setup (if needed)
 
-   ```python
-   import nltk
-   nltk.download('wordnet')
-   nltk.download('omw-1.4')
-   ```
+```python
+import nltk
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+```
 
 ---
 
@@ -103,7 +103,7 @@ sentiment-analysis/
 
 ---
 
-## 📊 Example Usage
+## 🎯 Example Usage
 
 **Input:**
 
@@ -114,7 +114,7 @@ I love using this product, it makes my life easier!
 **Output:**
 
 ```
-Predicted Sentiment: Positive
+Predicted Sentiment: Positive ✅
 ```
 
 ---
@@ -145,5 +145,8 @@ pip install -r requirements.txt
 * [Streamlit](https://streamlit.io/)
 
 ---
-## Author
-  Pavithra H
+
+## 👩‍💻 Author
+
+**Pavithra H** ✨
+
